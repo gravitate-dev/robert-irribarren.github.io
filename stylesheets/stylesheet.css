@@ -246,10 +246,17 @@ form {
   color: #474747;
 } 
 #main-content h2:before {
-  content: "//";
+  content: "/*";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin-left: -1.5em;
+  margin-right: 1em;
+}
+
+#main-content h2:after {
+  content: "*/";
+  color: #9ddcff;
+  padding-right: 0.3em;
+  margin-left: 1em;
 }
 
 #main-content h3 {
@@ -326,12 +333,10 @@ blockquote {
 }
 
 ul li {
-  list-style: disc inside;
   padding-left: 20px;
 }
 
 ol li {
-  list-style: decimal inside;
   padding-left: 3px;
 }
 
@@ -448,7 +453,7 @@ footer a:hover {
   #main-content,
   aside#sidebar {
     float: none;
-    width: 100% ! important;
+    width: 100%;
   }
   aside#sidebar {
     background-image: none;

@@ -12,14 +12,103 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
 
-    <title>Robert-irribarren.github.io by robert-irribarren</title>
+	
+	<!-- hint.css -->
+	<link rel="stylesheet" href="hint.css">
+	<!-- jAnimate by Me -->
+	<link rel="stylesheet" href="animations.css"/>
+
+<script src="jquery.js"></script>
+<script src="jAnimate.js"></script>
+<script>
+$(function() {
+$('li:odd').jAnimate("flipInTop");
+$('li:even').jAnimate("rotateFall moveFromBottomFade");
+});
+</script>
+
+	<!-- end jAnimate -->
+	
+	<!-- inlined -->
+		<style>
+	body {
+	font-family: "Tahoma","Geneva",sans-serif;
+font-size: 1em;
+letter-spacing: 0pt;
+word-spacing: 0pt;
+color: black; 	
+	}
+	a {
+	color: white;
+	}
+	
+	#jquery-projects {
+	background-color: rgba(0,0,155,.5);
+	border-radius: 40px;
+	}
+	
+	#jquery-projects h2{
+	margin-left:auto;
+	width: 70%;
+	}
+	
+	#hack-projects{
+	background-color: rgba(0,155,155,.5);
+	border-radius: 40px;
+	}
+	
+	#hack-projects h2{
+	margin-left:auto;
+	width: 70%;
+	}
+	
+	#web-projects{
+	background-color: rgba(155,155,0,.5);
+	border-radius: 40px;
+	}
+	
+	#web-projects h2{
+	margin-left:auto;
+	width: 70%;
+	}
+	
+	#ui-projects h2{
+	margin-left:auto;
+	width: 70%;
+	}
+	
+	#ui-projects{
+	border-radius: 40px;
+	background-color: rgba(155,0,155,.5);
+	}
+	li {
+	margin-bottom: 1em;
+	background: url(arrow-ul.png) 3px 8px no-repeat;
+	background-size:10px 10px;
+	list-style-type:none;
+	list-style: none;
+	}
+	
+	ul {
+	padding: 35px;
+	list-style-type:none;
+	list-style: none;
+	}
+	
+	h2 {
+	padding-top: 25px;
+	}
+	</style>
+	
+    <title>Robert Irribarren.github.io by robert-irribarren</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Robert-irribarren.github.io</h1>
+        <h1>Robert Irribarren.github.io</h1>
         <h2></h2>
         <a href="https://github.com/robert-irribarren" class="button"><small>Follow me on</small>GitHub</a>
       </div>
@@ -28,45 +117,57 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <ol>
-<li> Hiku.info (<a href="http://50.112.207.185/Hiku/Student/index.php">http://50.112.207.185/Hiku/Student/index.php</a>) Teacher and Student learning web application, done individually. Has a story creator complete IDE and students can read books and teachers can create lesson plans.
-Login Info : user : robertirribarren pass: welcome</li>
-<li>Sudoku Solver (PHP) Uses Optical Character Recognition to recognize and solve sudoku. Implemented image processing libraries
-Puzzle :  <a href="http://gunzhaxplz.com/phpOCR2/sudoku.png">http://gunzhaxplz.com/phpOCR2/sudoku.png</a> 
-Solution : <a href="http://gunzhaxplz.com/phpOCR2/imagemagic_part2.php">http://gunzhaxplz.com/phpOCR2/imagemagic_part2.php</a></li>
-<li>SCUPoints – <a href="http://gunzhaxplz.com/scupoints.com/main.php">http://gunzhaxplz.com/scupoints.com/main.php</a>
-Login Information : User : <a href="mailto:test@scu.edu">test@scu.edu</a> Pass: test
-Description : A website to let students sell points through an email exchange site. It incorporates HTML5 transitions gradients and it uses AJAX to search for students. It also utilizes Facebook Login.</li>
-<li>Youtube API  - <a href="http://gunzhaxplz.com/Theater2">http://gunzhaxplz.com/Theater2</a> 
+			<div id="web-projects">
+			<h2>Web projects</h2>
+				<ul>
+<li> <a class="hint--right hint--success hint--rounded" data-hint="Login info: robertirribarren:welcome" href="http://50.112.207.185/Hiku/Student/index.php">Hiku.info</a> Teacher and Student learning web application. Hand-built story creator IDE that allows the creation of stories by Teachers for students to read. It also supports lesson plans as well.
+</li>
+<li><a href="http://gunzhaxplz.com/phpOCR2/imagemagic_part2.php">Sudoku Solver</a> Uses Optical Character Recognition to recognize and solve sudoku. Implemented image processing libraries
+<a href="http://gunzhaxplz.com/phpOCR2/sudoku.png">Puzzle</a></li>
+<li><a class="hint--right hint--success hint--rounded" data-hint="Login info: test@scu.edu:test" href="http://gunzhaxplz.com/scupoints.com/main.php">SCUPoints</a> A website to let students sell points through an email exchange site. It incorporates HTML5 transitions gradients and it uses AJAX to search for students. It also utilizes Facebook Login.</li>
+<li><a href="http://gunzhaxplz.com/Theater2">Youtube Theater</a>
 I created a YouTube theater for guests to submit youtube videos to a global queue running on a MySQL backend. The videos are played synchronously amongst viewers using a timestamp and it allows users to vote to skip videos as well. The video is controlled through the JS API for YouTube.</li>
-<li>ChatBox :<a href="http://gunzhaxplz.com/robjess/chat.php">http://gunzhaxplz.com/robjess/chat.php</a> 
+<li><a href="http://gunzhaxplz.com/robjess/chat.php">ChatBox</a>
 An AJAX chatroom that runs on a MySQL backend.</li>
-<li>CSS3 HTML5 Transforming Carousel
-<a href="http://gunzhaxplz.com/robjess/languages/js/stahplight/witch/index2.html">http://gunzhaxplz.com/robjess/languages/js/stahplight/witch/index2.html</a> </li>
-<li>Found Security Exploit for mainstream game :
-I have reverse engineered Candy Crushes API calls from their flash game and have created a tool that beats ANY level with any score. This exploit still exists in their code.
-<a href="http://gunzhaxplz.com/candysagahack/">http://gunzhaxplz.com/candysagahack/</a> </li>
-<li>UI Design :
-Built a text service website with nice css3 transforms.
-<a href="http://gunzhaxplz.com/phonebook/">http://gunzhaxplz.com/phonebook</a></li>
-<li>Found Security Exploit for website
+<li><a href="http://gunzhaxplz.com/phonebook/">Phonebook</a> A text service website with nice css3 transforms
+</li>
+				</ul>
+			</div>
+			
+			<div id="ui-projects">
+			<h2>UI projects</h2>
+<ul>
+<li><a href="http://gunzhaxplz.com/robjess/languages/js/stahplight/witch/index2.html">CSS3 HTML5 Transforming Carousel</a></li>
+<li><a href="http://gunzhaxplz.com/phonebook/">Phonebook</a> A text service website with nice css3 transforms
+</li>
+</ul>
+</div>
+
+<div id="jquery-projects">
+			<h2>jQuery projects</h2>
+<ul>
+<li><a href="https://github.com/robert-irribarren/jAnimate/wiki">jAnimate</a> Plugin to chain css3 animations</li>
+</ul>
+</div>
+
+<div id="hack-projects">
+			<h2>Hack projects</h2>
+				<ul>
+<li><a href="http://gunzhaxplz.com/candysagahack/">Hacked Candy Crush</a>
+I have reverse engineered Candy Crushes API calls from their flash game and have created a tool that beats ANY level with any score. This exploit still exists in their code.</li>
+<li><a href="http://gunzhaxplz.com/kitco/metals2.php">Found Security Exploit for website</a>
 Kitco’s Gold Prices :
-I discovered how they contain their gold data on their website and I decrypt the data and display it in JSON The data is shown here : <a href="http://charts.kitco.com/KitcoCharts/RequestHandler?requestName=getSymbolHistoricalLiveChart&amp;Symbol=GOLD4USD&amp;1368230845157">http://charts.kitco.com/KitcoCharts/RequestHandler?requestName=getSymbolHistoricalLiveChart&amp;Symbol=GOLD4USD&amp;1368230845157</a>
+I discovered how they contain their gold data on their website and I decrypt the data and display it in JSON The data <a href="http://charts.kitco.com/KitcoCharts/RequestHandler?requestName=getSymbolHistoricalLiveChart&amp;Symbol=GOLD4USD&amp;1368230845157">is shown here</a>
 They store their gold prices in a text file that they use a simple translation encoding for
-<a href="http://gunzhaxplz.com/kitco/metals2.php">http://gunzhaxplz.com/kitco/metals2.php</a> 
 That page has the Kitco current gold prices as well as their other metals.</li>
-<li>Found Security Exploit for Executable C++ Mainstream Game
-GunZ: The Duel PC Game :
-Reverse Engineered ASM developed game hacks for this game for 3 years, see main.cpp
-<a href="http://www.gunzhaxplz.com/Dantastic/">http://www.gunzhaxplz.com/Dantastic/</a></li>
-</ol><p>For any of these projects I have open sourced code on my professional github which is here
-<a href="https://github.com/robert-irribarren">https://github.com/robert-irribarren</a></p>
-        </section>
+<li><a href="http://www.gunzhaxplz.com/Dantastic/">Hacked GunZ: The Duel PC Game</a> for Executable C++ Mainstream Game
+Reverse Engineered ASM developed game hacks for this game for 3 years, see main.cpp</li>
+</ul>
+</div>
+</section>
 
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        <aside id="sidebar">	
+		<a style="color:blue; font-size:3em;"href="https://github.com/robert-irribarren"><strong>My projects are open source on my</strong>GitHub</a>
         </aside>
       </div>
     </div>
